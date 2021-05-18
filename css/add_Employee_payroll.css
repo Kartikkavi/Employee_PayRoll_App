@@ -1,5 +1,4 @@
-/*UC-1*/
-
+/**UC-1**/
 body {
     margin: 0;
     height: 100;
@@ -26,21 +25,21 @@ body {
     border: solid 0px #42515f;
 }
 .emp-text{
-    font: normal normal bold 20px/25px Montserrat;
+    font: normal normal bold 20px/25px Montscrrat;
     font-family: "Montserrat", sans-serif ;
     letter-spacing: 0px;
     color: #82a70c;
     text-transform: capitalize;
 }
 .emp-payroll {
-    color: #42515f;
+    color: #42515f
+    ;
 }
 *{
     box-sizing: border-box;
 }
 
-
-/*UC-2 */
+/***UC-2***/
 .form-content {
     min-height: calc(100% - 80px);
     background-color: #f7f7f7;
@@ -59,13 +58,13 @@ body {
     opacity: 1;
 }
 .form-head {
-    font: normal normal bold 24px/37px Roboto;
+    font: normal normal bold 28px/37px Roboto;
     letter-spacing: 0px;
     color: #42515f;
     text-transform: capitalize;
     opacity: 1;
     padding-bottom: 20px;
-   
+    text-align: left;
 }
 
 .row-content {
@@ -96,7 +95,7 @@ label {
     resize: vertical;
 }
 
-/* UC-3 */
+/***UC-3***/
 .profile-radio-content {
     display: flex;
     flex-direction: row;
@@ -111,7 +110,7 @@ label {
     border-radius: 50%;
     margin-left: 12px;
 }
-/* UC-5 */
+/***UC-5***/
 select {
     padding: 12px;
     border: 1px solid #ccc;
@@ -122,7 +121,7 @@ select {
     color: #42515f;
     background-color: transparent;
 }
-/* UC-6 */
+/***UC-6***/
 .buttonParent {
     display: flex;
     margin-bottom: 10px;
@@ -152,6 +151,11 @@ select {
     /* margin-left: 140px; */
     text-decoration: none;
     text-align: center;
+}
+error-output {
+    margin: 10px;
+    font-style: italic;
+    color: red;
 }
 @media only screen and (max-width: 960px) {
     .cancelButton {
