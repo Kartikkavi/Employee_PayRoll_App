@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Payroll Home</title>
+        <link rel="stylesheet" href="../css/new_add_Employee_payroll.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:ital,wghte,
+            108; 0,200;0,308;0,480;0,600; 1,5086display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:ught2380;408;500;6ee6display=suap"
+            rel="stylesheet">
+            <script defer src="../js/new_add_Employee_payroll.js"></script>
+            <script defer src="../js/utility.js"></script>
+    
+    </head>
+    <body>
+        <header class="header-content header">
+            <div class="logo-content">
+                <img src="../assets/assets/images/logo.png" alt="Logo Image">
+                <div>
+                    <span class="emp-text">EMPLOYEE</span>
+                    <span class="emp-text emp-payroll">PAYROLL</span>
+                </div>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="header-content">
+                <div class="emp-detail-text">
+                    Employee Details <div class="emp-count">10</div>
+                </div>
+                <a href="../pages/add_employeePayroll.html" class="add-button">
+                    <img src="../assets/assets/icons/add-24px.svg" alt="Add User Logo">Add
+                    User
+                </a>
+            </div>
+        </div>
+        <table id="table-display" class="table">
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Start Date</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>
+                    <img class="profile" src="../assets/profile-images/Ellipse -2.png" alt="">
+                </td>
+                <td>Kartik Kavi</td>
+                <td>Male</td>
+                <td>
+                    <div class="dept-label">HR</div>
+                    <div class="dept-label">Finance</div>
+                </td>
+                <td>3000000</td>
+                <td>1 otc 2017</td>
+                <td>
+                    <img id="1" onclick="remove(this)"
+                        src="../assets/assets/icons/delete-black-18dp.svg"
+                        alt="delete">
+                    <img id="1" onclick="update(this)"
+                        src="../assets/assets/icons/create-black-18dp.svg" alt="edit">
+                </td>
+            </tr>
+        </table>
+       </body>
+</html>

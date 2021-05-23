@@ -2,83 +2,82 @@
 
 class EmployeePayroll {
     
-	getId() {
-	   return this._id;
-   }
+	get id() {
+      return this._id;
+  }
 
-   setId(id) {
-	   this._id = id;
-   }
+  set id(id) {
+      this._id = id;
+  }
 
-	getName() {
-	   return this._name;
-   }
+  get name() {
+      return this._name;
+  }
 
-	setName(name) {
-	   let nameRegex = RegExp('^[A-Z]{1}[a-zA-Z\\s]{2,}$');
-	   if (nameRegex.test(name)) {
-	   this._name = name;
-	}
-	   else {
-		   throw 'Name is Incorrect!!';
-	   } 
-   }
+  set name(name) {
+      const nameRegex = RegExp('^[A-Z]{1}[a-z]{2,}$');
+      if (nameRegex.test(name)) {
+          this._name = name;
+      } else {
+          throw 'Name is Incorrect';
+      }
+  }
 
-   getProfilePic() {
-	   return this._profilePic;
-   }
+  get profilePic() {
+      return this._profilePic;
+  }
 
-   setProfilePic(profilePic) {
-	   this._profilePic = profilePic;
-   }
+  set profilePic(profilePic) {
+      this._profilePic = profilePic;
+  }
 
-   getGender() {
-	   return this._gender;
-   }
+  get gender() {
+      return this._gender;
+  }
 
-   setGender(gender) {
-	   this._gender = gender;
-   }
+  set gender(gender) {
+      this._gender = gender;
+  }
 
-   getDepartment() {
-	   return this._department;
-   }
+  get department() {
+      return this._department;
+  }
 
-   setDepartment(department) {
-	   this._department = department;
-   }
+  set department(department) {
+      this._department = department;
+  }
 
-   getSalary() {
-	   return this._salary;
-   }
+  get salary() {
+      return this._salary;
+  }
 
-   setSalary(salary) {
-	   this._salary = salary;
-   }
+  set salary(salary) {
+      this._salary = salary;
+  }
 
-   getStartDate() {
-	   return this._startDate;
-   }
+  get startDate() {
+      return this._startDate;
+  }
 
-   setStartDate(startDate) {
-	   this._startDate = startDate;
-   }
+  set startDate(startDate) {
+      this._startDate = startDate;
+  }
 
-   getNote() {
-	   return this._note;
-   }
+  get note() {
+      return this._note;
+  }
 
-   setNote(note) {
-	   this._note = note;
-   }
-   // toString Method //
-   toString() {
-	   const options = { year: 'numeric', month: 'long', day: 'numeric' };
-	   const empDate = !this.startDate ? "undefined" : 
-					   this.startDate.toLocaleDateString("en-US", options);
-	   return "id=" + this.id + ", name=" + this.name + ", gender=" + this.gender + 
-			   ", profilePic=" + this.profilePic + ", departments=" + this.department + 
-			   ", salary=" + this.salary + ", startDate=" + empDate + ", note=" + this.note;
-   }
+  set note(note) {
+      this._note = note;
+  }
 
+  toString() {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      const empDate = !this._startDate ? 'undefined' : this._startDate.toLocaleDateString('en-US', options);
+      return "name=" + this._name + ", gender="
+          + this._gender + ", profilePic=" + this._profilePic
+          + ", departments=" + this._department + ", salary="
+          + this._salary + ", startDate=" + empDate
+          + ", note=" + this._note;
+  }
 }
