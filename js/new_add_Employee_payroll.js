@@ -53,6 +53,6 @@ const createInnerHtml = () => {
          }
         const update = (node) => {
             const currentUri = window.location.href;
-            const addUri = currentUri.replace("new_add_employeePayroll.html", "new_add_employeePayroll.html");
+            const addUri = currentUri.replace("new_add_employeePayroll.html", "add_employeePayroll.html");
             window.location.replace(addUri + "?index=" + node.id);
         }
